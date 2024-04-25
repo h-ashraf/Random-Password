@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  .card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 70%; /* Set a width for the card */
+    max-width: 500px; /* Limit the maximum width */
+    margin: 0 auto; /* Center align horizontally */
+    padding: 30px; /* Add some padding for content */
+    display: flex; /* Use flexbox for centering vertically */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  #lengthRange {
+    width: 100%;
+  }
+  
+  #lengthValue {
+    display: inline-block;
+    min-width: 30px;
+  }
+  
+  #passwordDisplay {
+    font-size: 1.2rem;
+    width: 100%; /* Full width */
+    margin: 0 auto 20px; /* Center-align and add bottom margin */
+  }
+  
+  h1 {
+    color: #333333; /* Dark gray color */
+  }
+  
+  .btn-primary {
+    width: 50%; /* Set the width of the button to 50% */
+    margin-left: auto; /* Align the button to the right within its container */
+    margin-right: auto;
+  }
+  /* Center align the submit button */
+  #generateBtn {
+    display: block;
+    margin: 20px auto; /* Center align the button horizontally */
+  }
+  

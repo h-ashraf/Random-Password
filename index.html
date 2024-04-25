@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container mt-5">
+			<div class="card p-3 bg-light">
+				<h1 class="text-center mb-4">Password Generator</h1>
+				<div class="form-group text-center">
+					<label for="passwordDisplay">Generated Password:</label>
+					<input type="text" class="form-control text-center" id="passwordDisplay" readonly />
+				</div>
+				<form id="passwordForm">
+					<!-- Added form element with id "passwordForm" -->
+					<div class="form-row align-items-center">
+						<div class="col-sm-6">
+							<label for="lengthRange">Password Length:</label>
+							<input type="range" class="form-control-range" id="lengthRange" min="8" max="20" value="12" />
+							<span id="lengthValue" class="font-weight-bold">12</span>
+						</div>
+						<div class="col-sm-6 mt-4 mt-sm-0">
+							<div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" id="capitalCheck" checked />
+								<label class="form-check-label" for="capitalCheck">Capital Letters</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" id="lowercaseCheck" checked />
+								<label class="form-check-label" for="lowercaseCheck">Lowercase Letters</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" id="numberCheck" checked />
+								<label class="form-check-label" for="numberCheck">Numbers</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" id="specialCheck" checked />
+								<label class="form-check-label" for="specialCheck">Special Characters</label>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary mt-3" id="generateBtn">Generate Password</button>
+				</form>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="generator.js"></script>
+	</body>
+</html>
